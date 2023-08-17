@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vending Machine</title>
+        <link href="main.css" rel="stylesheet" />
+        <script src="Vending.js"></script>
+    </head>
+    <body>
+        <div class="page-wrap">
+            <div class="vend-container">
+                <div class="vend-outer">
+
+                    <div class="touch-pad">
+                        <div class="button" value="Biskuit" id="Biskuit" onclick="pesan('Biskuit')">
+                            <p>Biskuit</p>
+                            <p id="jumlah_Biskuit">(10)</p>
+                        </div>
+                        <div class="button" value="Chips" id="Chips" onclick="pesan('Chips')">
+                            <p>Chips</p>
+                            <p id="jumlah_Chips">(10)</p>
+                        </div>
+                        <div class="button" value="Oreo" id="Oreo" onclick="pesan('Oreo')">
+                            <p>Oreo</p>
+                            <p id="jumlah_Oreo">(10)</p>
+                        </div>
+                        <div class="button" value="Tango" id="Tango" onclick="pesan('Tango')">
+                            <p>Tango</p>
+                            <p id="jumlah_Tango">(10)</p>
+                        </div>
+                        <div class="button" value="Cokelat" id="Cokelat" onclick="pesan('Cokelat')">
+                            <p>Cokelat</p>
+                            <p id="jumlah_Cokelat">(10)</p>
+                        </div>
+                    </div>
+
+                    <div class="uang-box">
+                        <label for="fname" style="color: white">Input Uang</label><br>
+                        <input style="width: 75px" type="number" min="0" id="uang" name="uang" value="">
+                        <button id="saveUang"> save </button> <br>
+                        <label for="fname" style="color: white">Saldo</label><br>
+                        <input style="width: 75px" type="text" id="saldo" disabled="true" value="0">
+                        <button id="ambilUang"> ambil </button> <br>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
